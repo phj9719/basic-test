@@ -30,14 +30,12 @@
             :selectionChanged="onSelectionChanged"
             style="margin-top:10px; max-height:65vh;"
         >
-            <wj-flex-grid-filter :filterColumns="['userId','isManager','departmentId','rankId','department','rank',]" />
+            <wj-flex-grid-filter :filterColumns="['userId','isManager','departmentId','rankId',]" />
             <wj-flex-grid-column binding="index" header="Number" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="userId" header="userId" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="isManager" header="isManager" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="departmentId" header="departmentId" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="rankId" header="rankId" width="2*" :isReadOnly="true" align="center" />
-            <wj-flex-grid-column binding="department" header="department" width="2*" :isReadOnly="true" align="center" />
-            <wj-flex-grid-column binding="rank" header="rank" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="departmentId." header="department" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="rankId." header="rank" width="2*" :isReadOnly="true" align="center" />
         </wj-flex-grid>

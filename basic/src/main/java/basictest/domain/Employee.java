@@ -25,12 +25,6 @@ public class Employee {
 
     private String rankId;
 
-    @OneToOne
-    private Department department;
-
-    @OneToOne
-    private Rank rank;
-
     @PostPersist
     public void onPostPersist() {
         EmployeeAdded employeeAdded = new EmployeeAdded(this);

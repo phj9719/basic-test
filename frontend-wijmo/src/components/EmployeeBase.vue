@@ -3,8 +3,6 @@
 </template>
 
 <script>
-    import DepartmentBase from '../components/DepartmentBase.vue'
-    import RankBase from '../components/RankBase.vue'
     const axios = require('axios').default;
 
     export default{
@@ -55,20 +53,10 @@
                 }
             },
             async processData(data){
-                let DepartmentClass = this.$Vue.extend(DepartmentBase);
-                this.department = new DepartmentClass();
-                let RankClass = this.$Vue.extend(RankBase);
-                this.rank = new RankClass();
                 
 
                 let Promises = data.map(async (value) => {
                     if(value == null) return
-                    if (value.department && value.department.id){
-                        value.department = await this.department.getRealEntity(value.department.id);
-                    }
-                    if (value.rank && value.rank.id){
-                        value.rank = await this.rank.getRealEntity(value.rank.id);
-                    }
                 });
                 await Promise.all(Promises);
                 for(var i = 0; i < data.length ; i++ ) {

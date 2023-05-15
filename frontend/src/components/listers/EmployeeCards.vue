@@ -72,8 +72,6 @@
                 'isManager': false,
                 'departmentId': '',
                 'rankId': '',
-                'department': '',
-                'rank': '',
             }
         },
         methods:{

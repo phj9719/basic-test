@@ -14,8 +14,6 @@
                             
                             
                             
-                            
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -24,8 +22,6 @@
                             [ IsManager :  {{data.isManager }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ DepartmentId :  {{data.departmentId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ RankId :  {{data.rankId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Department :  {{data.department }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Rank :  {{data.rank }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -111,8 +107,6 @@
                 'isManager': false,
                 'departmentId': '',
                 'rankId': '',
-                'department': '',
-                'rank': '',
             }
         },
         methods: {

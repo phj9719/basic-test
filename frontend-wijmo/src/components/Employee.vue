@@ -21,8 +21,6 @@
             <Boolean label="IsManager" v-model="value.isManager" :editMode="editMode"/>
             <String label="DepartmentId" v-model="value.departmentId" :editMode="editMode"/>
             <String label="RankId" v-model="value.rankId" :editMode="editMode"/>
-            <Department offline label="Department" v-model="value.department" :editMode="editMode" @change="change"/>
-            <Rank offline label="Rank" v-model="value.rank" :editMode="editMode" @change="change"/>
         </v-card-text>
 
         <v-card-actions>

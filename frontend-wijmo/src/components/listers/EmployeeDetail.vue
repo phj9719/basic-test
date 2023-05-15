@@ -17,8 +17,6 @@
             <div>
                 <String label="RankId" v-model="item.rankId" :editMode="editMode" @change="change" />
             </div>
-            <Department offline label="Department" v-model="item.department" :editMode="false" :key="false" @change="change" />
-            <Rank offline label="Rank" v-model="item.rank" :editMode="false" :key="false" @change="change" />
         </v-card-text>
 
         <v-card-actions>
